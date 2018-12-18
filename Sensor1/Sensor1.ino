@@ -3,7 +3,7 @@
 #include <LiquidCrystal.h>
 #include <EtherCard.h>
 
-#define APIKEY "MZKNYQLA1R30TF0F"
+#define APIKEY "MZKNYQLA1R30TF0F" // chave do gráfico do ThingSpeak
 
 const char website[] PROGMEM = "api.thingspeak.com";
 
@@ -323,7 +323,6 @@ void enviaDados(){
    delay(300);
 
 } 
-
 
 void setup(void)
 {
