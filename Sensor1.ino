@@ -1,12 +1,12 @@
- #include <OneWire.h>
+#include <OneWire.h>
 #include <DallasTemperature.h>
 #include <LiquidCrystal.h>
 
-/*
+
 //Bibliotecas do cartao SD
 #include <SPI.h>
 #include <SD.h>
-*/
+
 
 //Define o CS do cartao SD como 4
 const int chipSelect = 10;
@@ -70,7 +70,7 @@ LiquidCrystal lcd(7, 8, 5, 4, 3, 2);
 
 
 //Criando arquivo para guardar as informacoes lidas pelo sensor
-//File myFile;
+File myFile;
 
   float tempC;
   int i=1;
@@ -147,7 +147,7 @@ void medesensor(){
 
 
 //Funcao que cria um arquivo para armazenar os valores da temperatura
-/*void cartaosd(){
+void cartaosd(){
 
   
   String arquivo = String(tempC)+";"+String(tempMax)+";"+String(tempMin)+"\n";
@@ -167,7 +167,7 @@ void medesensor(){
   lcd.print("erro no arquivo");
   }
 }
-*/
+
 
 //Funcao para imprimir os dados na tela do lcd
 void mostrandolcd(){
@@ -232,7 +232,7 @@ void setup(void)
   Serial.begin(9600);
   
   //inicializa o cartao de memoria
-//  SD.begin(chipSelect);
+  SD.begin(chipSelect);
     
  //Chamada das funcoes criadas anteriormente
 
@@ -250,7 +250,7 @@ void setup(void)
 
 void loop(){
   //Chamada das funcoes criadas anteriormente
-    //cartaosd();
+    cartaosd();
   medesensor();
   variaTempC();
   mostrandolcd();
