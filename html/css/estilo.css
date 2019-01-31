@@ -1,0 +1,59 @@
+﻿@charset "UTF-8";
+
+	body{
+          background-color:lightgray;
+          background-image: url("fundo2.JPG");
+          font-family:arial;
+          color: rgba(0,0,0,1);
+    }
+
+    h1{
+          color: grey;
+          text-align:center;
+          text-shadow: 2px 2px 2px black;
+    }
+
+    h3{
+          text-align:center;
+
+    }      
+
+    p{
+          text-align: justify;
+          text-indent: 50px
+    }
+
+    /*configurações de fotos com legenda*/
+
+    figure.foto-legenda{
+    	position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+		width: 400px;
+    }
+
+    figure.foto-legenda img{
+    	height: 100%;
+    	width: 100%;
+    }
+
+    figure.foto-legenda figcaption{
+    	opacity: 0;
+    	color: white;
+    	background-color: rgba(0,0,0,0.4);
+    	padding: 10px;
+    	box-sizing: border-box;
+    	width: 100%;
+    	height: 100%;
+    	top: 0px;
+    	position: absolute;
+    	transition: opacity 1s;
+
+    }
+
+    figure.foto-legenda:hover figcaption{
+			opacity: 1;
+	}
+
+	782077782077
+
