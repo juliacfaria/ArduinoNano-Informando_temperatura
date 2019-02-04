@@ -1,21 +1,56 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-   <title>Arduinizando </title>
-   <meta charset="UTF-8">
-   <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Projeto com Arduino</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
-   <h1>Sistemas Internet -Sensor de temperatura com Arduino<br/></h1>
-   <h3>O sistema desenvolvido tem o intuito de fornecer informações da temperatura de determinado local,<strong> em tempo real.</strong> </h3>
-   <br/>
-   <p >A Figura 1 refere-se ao Arduino utilizado no projeto em questão.</p>
-<figure class="foto-legenda">
-   <img src="imagens/rduino_Nano.jpg" alt="Arduino Nano" width=100 height=100>  
-   <figcaption><strong>Figura 1 - Arduino Nano(imagem: filipeflop)</strong></figcaption>
-</figure>
-   <br/>
-   <br/>
+    <div id="interface">
+      <header id ="cabecalho">
+      <hgroup>
+      <h1>Sistemas Internet das Coisas com Arduino<br/></h1>
+      <h2>Informando dados com um sensor de temperatura à prova d'água</h2>
+      </hgroup>
+
+      <nav id="menu">
+      <h1>Menu Principal</h1>
+      <ul>
+        <li><a href="index.html"> home</a></li>
+        <li><a href="materiais.html"> materiais</a></li>
+        <li><a href="metodologia.html">metodologia</a></li>
+        <li><a href="checagens.html">checagens</a></li>
+      </ul>
+      </nav>
+      </header>
+      <h2>Por Júlia Costa</h2>
+      <h3>Atualizado em xx/xx/xxxx</h3>
+      <h1>O que é Arduino</h1>
+      <p>O Arduino é um microcontrolador open-source que foi criado com o objetivo de facilitar a prototipação de projetos, de forma que iniciantes na área da computação possam desenvolver um projeto simples aprendendo o básico desse componente. Além disso, o Arduino tem seu próprio ambiente de programação, assim, ele abrange hardware (parte física) e software (parte lógica). O código é enviado para a placa que, ao receber as informações, as interpreta e realiza seus comandos. Para informações mais detalhadas sobre o Arduino, clique <a href="http://www.arduino.cc/" target="_blank">aqui</a>. Por ser uma plataforma favorável ao desenvolvimento de projetos, ser fácil de manusear e ideal para iniciantes, o arduino foi a base do trabalho em questão. A Figura 1 refere-se ao Arduino utilizado no projeto.</p>
+      <figure class="foto-legenda">
+        <img src="imagens/rduino_Nano.jpg" alt="Arduino Nano" width=100 height=100>  
+        <figcaption>
+          <h3>Figura 1-Arduino Nano(imagem: filipeflop)</h3>
+        </figcaption>
+      </figure>
+
+      <h1>Sobre o Projeto</h1>
+      <p>A variação da temperatura é importante em muitas áreas da atualidade, sejam elas relacionadas ao trabalho ou à pesquisa. Essa variação pode influenciar no comportamento de animais, na velocidade de reações químicas, na conservação de alimentos e máquinas, dentre outros. Para facilitar o processo de medição de temperatura, o projeto visou desenvolver um aparelho que realizasse tais medições, além de disponibilizá-las online e em tempo real. </p>
+      <p> Para isso, utilizou-se o Arduino como base do equipamento e o interligou a outros componentes eletrônicos de forma a realizar todas as funcionalidades definidas no escopo do projeto. A montagem final do projeto está indicada na figura 2.</p>
+      <figure class="foto-legenda">
+        <img src="imagens/montagem_projeto.jpeg" alt="Montagem do projeto desenvolvido com o Arduino Nano" width=10 height=10>
+        <figcaption><b>Figura 2 - Montagem do projeto desenvolvido</b></figcaption> 
+      </figure>
+
+
+
+
+
+
+
+
+
+
    <p>Os componentes eletrônicos usados no projeto foram:
  <pre style="color:gray;"><ul>
    <li>uma placa de rede Ethernet Shield W5100;
@@ -25,20 +60,19 @@
         <li>jumpers;
        <li>um Arduino Nano microcontrolador Atmel ATmega328.
  </pre>
-<p> A montagem final está indicada na figura 2.</p>
-<figure class="foto-legenda">
-   <img src="imagens/montagem_projeto.jpeg" alt="Montagem do projeto desenvolvido com o Arduino Nano" width=10 height=10>
-   <figcaption><strong>Figura 2 - Montagem do projeto desenvolvido</strong></figcaption> 
-</figure>
+
  <br/>
  <p>A montagem do projeto foi esquematizada no Fritzing, assim como indica a Figura 3.
 <figure class="foto-legenda">
     <img src="imagens/img_fritzing.png" alt="Esquema de montagem na plataforma Fritzing relativo ao projeto" width="400" height="300">  
-    <figcaption><strong>Figura 3 - Esquema de montagem na plataforma Fritzing relativo ao projeto</strong></figcaption>
+    <figcaption><b>Figura 3 - Esquema de montagem na plataforma Fritzing relativo ao projeto</b></figcaption>
 </figure>
 
    <h1>Últimas checagens:</h1>
    <p>Gráfico TemperaturaxData desenvolvido na plataforma ThingSpeak</p>
 
 <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/582449/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe> 
+</div>
+</body>
+
 </html>
