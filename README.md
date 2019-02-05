@@ -1,1 +1,1 @@
-Projeto IOT desenvolvido com Arduino para facilitar o processo de medir e informar a temperatura.
+Projeto IOT desenvolvido com Arduino para facilitar o processo de medir e informar a temperatura. Com um sensor de temperatura à prova d'água, o equipamento informa em um site, por meio de um gráfico desenvolvido no ThingSpeak, as medições e as variações da temperatura do local em que se encontra.
