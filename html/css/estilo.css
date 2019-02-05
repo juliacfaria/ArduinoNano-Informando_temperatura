@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Saira+Extra+Condensed');
+
 	body{
         font-family:arial;
         color: rgba(0,0,0,1);
@@ -31,12 +33,12 @@
 
     header#cabecalho{
     	border-bottom: 1px #606060 solid;
-    	height: 150px;
+    	height: 140px;
     }
 
     header#cabecalho h1{
     	font-size: 30pt;
-    	font-family: Arial,sans-serif;
+		font-family: 'Open Sans Condensed', sans-serif;
     	color: #606060;
     	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     	padding: 0px
@@ -45,11 +47,11 @@
     }
 
     header#cabecalho h2{
-    	font-size: 15pt;
-    	font-family: Arial,sans-serif;
+    	font-size: 25pt;
+		font-family: 'Saira Extra Condensed', sans-serif;
     	color: #888888;
     	padding: 0px;
-    	margin-top: 0px; 
+    	margin-top: -30px; 
     }
 
 
@@ -59,7 +61,7 @@
     	position: relative;
 		border: 8px solid white;
 		box-shadow: 1px 1px 4px black;
-		width: 400px;
+
     }
 
     figure.foto-legenda img{
@@ -128,4 +130,23 @@
 		display: none;
 	}
 
-	
+	/*Formatação do corpo*/
+
+	section#corpo{
+		display: block;
+		width: 620px;
+		float: left;
+		border-right: 1px solid #606060;
+		padding-right: 15px;
+	}
+
+	aside#lateral{
+		display: block;
+		width: 700px;
+		float: right;
+	}
+
+	footer#rodape{
+		clear: both;
+		border-top: 1px solid #606060;
+	}
