@@ -1,26 +1,25 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Saira+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 	body{
         font-family:arial;
         color: rgba(0,0,0,1);
         background-color: #dddddd;
     }
-/*
-    h1{
-          color: grey;
-          text-align:center;
-          text-shadow: 2px 2px 2px black;
-    }
 
-    h3{
-          text-align:center;
-
-    }      
-*/
     p{
         text-align: justify;
         text-indent: 50px
+    }
+
+    a{
+    	text-decoration: none;
+    	color: #606060;			
+    }
+
+    a:hover{
+    	text-decoration: underline;	
     }
 
     div#interface{
@@ -134,19 +133,45 @@
 
 	section#corpo{
 		display: block;
-		width: 620px;
+		width: 700px;
 		float: left;
 		border-right: 1px solid #606060;
 		padding-right: 15px;
 	}
 
+	section#corpo h1{
+		font-family: 'Titillium Web', sans-serif;	
+		font-size: 20pt;
+	}
+
+	section#corpo p{
+		font-family: 'Titillium Web', sans-serif;	
+		font-size: 13pt;
+	}
+
 	aside#lateral{
 		display: block;
-		width: 700px;
+		width: 630px;
 		float: right;
+		margin-top: 0px;
+		padding: 0px;
+	}
+
+	aside#lateral h1{
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 20pt;
+	}
+
+	aside#lateral p{
+		font-family: 'Titillium Web', sans-serif;	
+		font-size: 13pt;
 	}
 
 	footer#rodape{
 		clear: both;
 		border-top: 1px solid #606060;
+	}
+
+	footer#rodape p{
+		text-align: center;
 	}
