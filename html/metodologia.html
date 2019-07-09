@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Projeto com Arduino</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+    <div id="interface">
+      <header id ="cabecalho">
+      <hgroup>
+      <h1>Sistemas Internet das Coisas com Arduino<br/></h1>
+      <h2>Informando dados com um sensor de temperatura à prova d'água</h2>
+      </hgroup>
+
+      <nav id="menu">
+      <h1>Menu Principal</h1>
+      <ul>
+        <li><a href="index.html"> home</a></li>
+        <li><a href="materiais.html"> materiais</a></li>
+        <li><a href="metodologia.html">metodologia</a></li>
+        <li><a href="checagens.html">checagens</a></li>
+      </ul>
+      </nav>
+      </header>
+
+      <section id="corpo">
+      <p> Primeiramente, foram realizadas leituras a respeito do Arduino, da IDE do Arduino, dos demais componentes eletrônicos utilizados e das ligações entre eles. Isso foi necessário para se ter uma compreensão inicial dos materiais e de como eles seriam utilizados no projeto. As leituras realizadas foram principalmente das publicações do site filipeflop, pelo autor Adilson Thomsen.</p>
+      <p>Em relação ao hardware, todos os componentes foram ligados de forma direta ou indiretamente ao Arduino. O Arduino foi ligado pelos seus pinos à placa de rede e à protoboard. Por meio da protoboard, ele foi ligado ao display e ao sensor de temperatura, assim como indicado pela próxima figura. Todas as ligações eletrônicas foram baseadas nos datasheets dos componentes e ocorreram por meio de jumpers.</p>
+      <figure class="foto-legenda">
+        <img src="imagens/diagramaBlocos.png" alt="Diagrama de Blocos referente à relação entre os componentes utilizados no projeto">
+        <figcaption> <h3>Diagrama de Blocos referente à montagem do projeto</h3></figcaption>
+      </figure>
+
+      <p> O sensor de temperatura foi responsável por medir a temperatura do local em que estiver e passá-las para o Arduino. Já o display LCD, mostra as temperaturas medidas pelo sensor na tela do equipamento. A placa de rede, realiza a conexão com a internet por meio de um cabo par trançado ligado da placa a um roteador. A conexão à internet é necessária para disponibilizar, em um site, as temperaturas medidas.</p> 
+      <p>O Arduino foi a base do equipamento montado principalmente por ter relação com um ambiente de programação. Essa IDE comunica-se diretamente com o Arduino por meio de um cabo USB e envia as informações a respeito do que deve ser realizado pela placa.</p>  
+      </section>
+
+      <aside id="lateral">
+        
+        <p>O software foi desenvolvido na IDE do Arduino. As funcionalidades de cada componente foi definida no código e, posteriormente foram relacionadas de forma que todas funcionassem a partir de um único comando.</p>
+        <p>As informações da temperatura do ambiente são enviadas,a partir da conexão com a internet, à plataforma do ThingSpeak. Essa plataforma é responsável pelo desenvolvimento de gráficos com as informações enviadas de forma a facilitar a compreensão de tais dados.</p>
+        <p>O gráfico do ThingSpeak  foi disponibilizado em um site desenvolvido em HTML. Esse site é voltado para que o usuário verifique as informações da variação da temperatura do local em que o aparelho desenvolvido se encontra.</p>
+        <p>Na figura a seguir, pode-se observar o processo de medição de temperatura em funcionamento, em que são mostrados no display a temperatura medida no momento, a menor temperatura e a maior temperatura medidas desde o momento em que o equipamento foi ligado.</p>
+        <figure class="foto-legenda">
+          <img src="imagens/p1.png" alt="Sistema em funcionamento evidenciando as temperaturas do ambiente">
+          <figcaption> <h3>Sistema em funcionamento evidenciando as temperaturas do ambiente</h3></figcaption>
+      </figure>
+
+      </aside>
+
+      <footer id="rodape">
+        <p>Copyright &copy 2019 - by Júlia Costa</p>
+      </footer>
+</div>
+</body>
+
+</html>
